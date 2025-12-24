@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SK Photography </title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button class="toggle" onclick="toggleDark()">🌙</button>
+
+<header>
+  <h1>SK AI Photography</h1>
+  <p>AI Photo • Prompts • Editing</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Gallery</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  
+  <section class="gallery-item">
+    <img src="sk1.jpg" alt="Red hoodie photographer">
+    
+    <p class="prompt-text" id="p1">
+      A stylish young man sitting on a wooden box, holding a DSLR camera in his hand,
+      wearing a red hoodie, black pants, cinematic daylight, ultra-realistic, 8K.
+    </p>
+    
+    <button class="copy-btn" onclick="copyPrompt('p1')">
+      📋 Copy Prompt
+    </button>
+  </section>
+  
+  <section class="gallery-item">
+    <img src="sk2.jpg" alt="Grey hoodie photographer">
+    
+    <p class="prompt-text" id="p2">
+      Photographer wearing a light grey hoodie, sunglasses, DSLR camera,
+      soft daylight, cinematic framing.
+    </p>
+    
+    <button class="copy-btn" onclick="copyPrompt('p2')">
+      📋 Copy Prompt
+    </button>
+  </section>
+  
+</main>
+
+<footer>
+  © 2026 SK AI Photography
+</footer>
+
+<div class="toast" id="toast">Prompt copied!</div>
+  <script src="main.js"></script>
+</body>
+</html>
